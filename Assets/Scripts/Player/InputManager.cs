@@ -5,22 +5,30 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public event EventHandler OnJump;
+    public event EventHandler OnJumpPress;
 
     public float moveDirection;
     [SerializeField] private Move player;
+    [SerializeField] private GroundChecker groundChecker;
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        float moveDirectionX = Input.GetAxis("Horizontal");
+
+        if (moveDirectionX != 0)
         {
             moveDirection = Input.GetAxisRaw("Horizontal");
             player.MoveAround(moveDirection);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetButtonDown("Jump"))
         {
-            OnJump?.Invoke(this, EventArgs.Empty);
+            if (groundChecker.Check() == true)
+            {
+                moveDirection = Input.GetAxisRaw("Vertical");
+                OnJumpPress?.Invoke(this, EventArgs.Empty);
+            }
+            else if(groundChecker.Check() == false) return;
         }
     }
 }

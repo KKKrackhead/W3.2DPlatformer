@@ -7,14 +7,15 @@ public class Jump : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private InputManager inputManager;
+    [SerializeField] private float jumpForce = 4;
 
     private void Start()
     {
-        inputManager.OnJump += InputManager_OnJump;
+        inputManager.OnJumpPress += InputManager_OnJumpPress;
     }
 
-    private void InputManager_OnJump(object sender, EventArgs e)
+    private void InputManager_OnJumpPress(object sender, EventArgs e)
     {
-        rb.velocity = new Vector2(rb.velocity.x, 7);
+        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 }
