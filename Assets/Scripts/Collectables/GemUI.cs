@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class CherryUI : MonoBehaviour
+public class GemUI : MonoBehaviour
 {
     [SerializeField] PlayerValuables player;
-    [SerializeField] TextMeshProUGUI cherryText;
+    [SerializeField] TextMeshProUGUI gemText;
 
     private void Update()
     {
-        cherryText.text = player.cherry.ToString();
+        gemText.text = player.gem.ToString();
     }
 }

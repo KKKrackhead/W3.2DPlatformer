@@ -56,15 +56,20 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemies\FrogAI.cs" />
     <Compile Include="Assets\Scripts\Player\Move.cs" />
     <Compile Include="Assets\Scripts\Player\Jump.cs" />
     <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
-    <Compile Include="Assets\Scripts\Player\InputManager.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAnimController.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
-    <Compile Include="Assets\Scripts\Collectables\Cherry.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerValuables.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyCollide.cs" />
+    <Compile Include="Assets\Scripts\Enemies\FrogAnimController.cs" />
     <Compile Include="Assets\Scripts\Collectables\CherryUI.cs" />
+    <Compile Include="Assets\Scripts\Player\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerValuables.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimController.cs" />
+    <Compile Include="Assets\Scripts\Collectables\Cherry.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
+    <Compile Include="Assets\Scripts\Collectables\Gem.cs" />
+    <Compile Include="Assets\Scripts\Collectables\GemUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

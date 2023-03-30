@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerValuables : MonoBehaviour
 {
     public int cherry;
+    public int gem;
 }

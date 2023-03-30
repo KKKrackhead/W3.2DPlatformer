@@ -10,12 +10,14 @@ public class InputManager : MonoBehaviour
     public float moveDirection;
     [SerializeField] private Move player;
     [SerializeField] private GroundChecker groundChecker;
+    [SerializeField] private PlayerState playerState;
 
     void Update()
     {
         float moveDirectionX = Input.GetAxis("Horizontal");
 
-        if (moveDirectionX != 0)
+        if (playerState.state == PlayerState.State.hurt) return;
+        else if (moveDirectionX != 0)
         {
             moveDirection = Input.GetAxisRaw("Horizontal");
             player.MoveAround(moveDirection);

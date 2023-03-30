@@ -7,7 +7,7 @@ public class Jump : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private InputManager inputManager;
-    [SerializeField] private float jumpForce = 4;
+    [SerializeField] private float jumpForce = 5;
 
     private void Start()
     {
@@ -15,6 +15,11 @@ public class Jump : MonoBehaviour
     }
 
     private void InputManager_OnJumpPress(object sender, EventArgs e)
+    {
+        Levioso();
+    }
+
+    public void Levioso()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
