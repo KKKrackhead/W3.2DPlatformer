@@ -6,8 +6,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
-
-    [SerializeField]private float moveSpeed = 12;
+    [SerializeField] private float moveSpeed = 12;
 
     public void MoveAround(float moveDirection)
     {

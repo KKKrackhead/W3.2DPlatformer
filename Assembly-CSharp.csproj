@@ -70,6 +70,11 @@
     <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
     <Compile Include="Assets\Scripts\Collectables\Gem.cs" />
     <Compile Include="Assets\Scripts\Collectables\GemUI.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyDeathAnim.cs" />
+    <Compile Include="Assets\Scripts\Player\RespawnPoint.cs" />
+    <Compile Include="Assets\Scripts\Player\RespawnPlayer.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyDeathSound.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerSound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

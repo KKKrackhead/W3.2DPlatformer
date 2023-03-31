@@ -15,6 +15,7 @@ public class PlayerState : MonoBehaviour
     private void Start()
     {
         inputManager.OnJumpPress += InputManager_OnJumpPress;
+        state = State.idle;
     }
 
     private void InputManager_OnJumpPress(object sender, System.EventArgs e)
