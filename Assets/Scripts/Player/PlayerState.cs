@@ -25,6 +25,7 @@ public class PlayerState : MonoBehaviour
 
     void Update()
     {
+        
         if (state == State.jumping)
         {
             if (rb.velocity.y < .1f) state = State.falling;
@@ -40,6 +41,11 @@ public class PlayerState : MonoBehaviour
         }
         else if (Mathf.Abs(rb.velocity.x) > 2f) state = State.walking;
         else state = State.idle;
+
+        if (state == State.idle)
+        {
+            if (rb.velocity.y < Mathf.Abs(1.4e-06f) && !groundChecker.Check()) state = State.falling;
+        }
 
         animControl.SetState((int)state);
     }

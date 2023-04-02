@@ -1,15 +1,15 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Cherry : MonoBehaviour
+public class Cherry : ItemBase
 {
-    private AudioSource sound;
+    
 
-    private void Start()
+    protected override void Start()
     {
-        sound = GameObject.Find("PickUpAudio").GetComponent<AudioSource>();
+        base.Start();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,8 +17,8 @@ public class Cherry : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameObject.Find("Player").GetComponent<PlayerValuables>().cherry++;
-            sound.Play();
-            Destroy(gameObject);
+            ItemAudio();
+            PickUp();
         }
     }
 }

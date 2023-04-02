@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 103273501953608929}
   - component: {fileID: 4581553326098780025}
   - component: {fileID: 2338308389087546655}
+  - component: {fileID: 6422631171716781433}
+  - component: {fileID: 8326997986661993776}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Untagged
@@ -146,3 +148,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081aee93aa3a6b243bf244bb4b5626fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6422631171716781433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103273501953608930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf25bef28e3adb4eb5c504165daa997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8326997986661993776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103273501953608930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16478f97327007747bae6bad3028ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemBase: {fileID: 6422631171716781433}

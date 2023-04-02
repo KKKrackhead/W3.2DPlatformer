@@ -60,21 +60,28 @@
     <Compile Include="Assets\Scripts\Player\Move.cs" />
     <Compile Include="Assets\Scripts\Player\Jump.cs" />
     <Compile Include="Assets\Scripts\Player\GroundChecker.cs" />
+    <Compile Include="Assets\Scripts\Collectables\ItemBase.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyCollide.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyDeathAnim.cs" />
+    <Compile Include="Assets\Scripts\Collectables\GemUI.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerSound.cs" />
     <Compile Include="Assets\Scripts\Enemies\FrogAnimController.cs" />
     <Compile Include="Assets\Scripts\Collectables\CherryUI.cs" />
+    <Compile Include="Assets\Scripts\Collectables\ItemSound.cs" />
+    <Compile Include="Assets\Scripts\Player\RespawnPoint.cs" />
+    <Compile Include="Assets\Scripts\Collectables\ItemAnim.cs" />
+    <Compile Include="Assets\Scripts\Collectables\Gem.cs" />
     <Compile Include="Assets\Scripts\Player\InputManager.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerValuables.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyDeathSound.cs" />
+    <Compile Include="Assets\Scripts\ChangeCamera.cs" />
+    <Compile Include="Assets\Scripts\Player\RespawnPlayer.cs" />
     <Compile Include="Assets\Scripts\Collectables\Cherry.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
-    <Compile Include="Assets\Scripts\Collectables\Gem.cs" />
-    <Compile Include="Assets\Scripts\Collectables\GemUI.cs" />
-    <Compile Include="Assets\Scripts\Enemies\EnemyDeathAnim.cs" />
-    <Compile Include="Assets\Scripts\Player\RespawnPoint.cs" />
-    <Compile Include="Assets\Scripts\Player\RespawnPlayer.cs" />
-    <Compile Include="Assets\Scripts\Enemies\EnemyDeathSound.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerSound.cs" />
+    <Compile Include="Assets\Scripts\Collectables\ItemParticle.cs" />
+    <Compile Include="Assets\Scripts\ChangeLevel.cs" />
+    <Compile Include="Assets\Scripts\ExitGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

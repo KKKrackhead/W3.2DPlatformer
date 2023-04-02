@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Gem : MonoBehaviour
+public class Gem : ItemBase
 {
-    private AudioSource sound;
-
-    private void Start()
+    protected override void Start()
     {
-        sound = GameObject.Find("PickUpAudio").GetComponent<AudioSource>();
+        base.Start();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,8 +15,8 @@ public class Gem : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameObject.Find("Player").GetComponent<PlayerValuables>().gem++;
-            sound.Play();
-            Destroy(gameObject);
+            base.ItemAudio();
+            PickUp();
         }
     }
 }
